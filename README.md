@@ -1,4 +1,4 @@
-phpBB-Buttons-menu-MOD
+phpBB Buttons menu MOD
 ======================
 
 Buttons menu MOD adds a menu under the header similar to phpbb.com menu. This menu is fully configurable via ACP. You can easily add new buttons and subbutons to create a dropdown menu. Included colors: blue, gray, black, orange, brown. You can read more about this MOD on [phpBB3Hacks.com](http://phpbb3hacks.com/modifications.php?name=Buttons-menu "phpBB Services")
