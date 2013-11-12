@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="modx.prosilver.en.xsl"?>
+<!--NOTICE: Please open this file in your web browser. If presented with a security warning, you may safely tell it to allow the blocked content.-->
+<!--For security purposes, please check: http://www.phpbb.com/mods/ for the latest version of this MOD.\nAlthough MODs are checked before being allowed in the MODs Database there is no guarantee that there are no security problems within the MOD.\nNo support will be given for MODs not found within the MODs Database which can be found at http://www.phpbb.com/mods/-->
+<mod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.phpbb.com/mods/xml/modx-1.2.5.xsd">
+	<header>
+		<meta name="generator" content="MODX file generated with PP MODX Creator by tumba25 (online version)"/>
+		<license><![CDATA[http://opensource.org/licenses/gpl-license.php GNU General Public License v2]]></license>
+		<title lang="en"><![CDATA[Buttons menu]]></title>
+		<description lang="en"><![CDATA[This MOD adds a menu under the header (similar to phpbb.com menu) fully configurable via ACP. You can easily add new buttons and subbutons to create a dropdown menu. Included colors: blue, gray, black, orange, brown. You can add your own color very easy (more info in DIY at the end of this file).]]></description>
+		<author-notes lang="en"><![CDATA[Update from Buttons menu MOD 1.1.0 to version 2.0.0 - you have to uninstall Buttons menu MOD 1.1.0 competly and then install Buttons menu MOD 2.1.0
+
+Update from Buttons menu MOD 2.0.0 to version 2.1.0 - you have to uninstall version 2.0.0 from files functions.php and overall_header.html Then replace old files with files from 2.1.0 and follow install instructions from 2.1.0 and edit functions.php and overall_header.html , then run the update script install_buttons_menu.php
+
+Update from Buttons menu MOD 2.1.0 to version 2.1.1 - replace old files with files from 2.1.1, then run the update script install_buttons_menu.php
+
+Update from Buttons menu MOD 2.1.1 to version 2.2.0 - there are no changes for prosilver. Only subsilver instructions have been added.
+
+Update from Buttons menu MOD 2.2.0 to version 2.3.0 - you have to uninstall version 2.2.0 from file functions.php . Then replace old files with files from 2.3.0 and follow install instructions from 2.3.0 and edit functions.php , then run the update script install_buttons_menu.php]]></author-notes>
+		<author-group>
+			<author>
+				<realname><![CDATA[Martin]]></realname>
+				<username><![CDATA[Kamahl19]]></username>
+				<homepage><![CDATA[http://www.phpbb3hacks.com]]></homepage>
+				<contributions-group>
+					<contributions status="past" from="2008-08-02" position="Developer"/>
+				</contributions-group>
+			</author>
+		</author-group>
+		<mod-version>2.3.0</mod-version>
+		<installation>
+			<level>easy</level>
+			<time>180</time>
+			<target-version>3.0.12</target-version>
+		</installation>
+		<history>
+			<entry>
+				<date>2008-08-02</date>
+				<rev-version>1.0.0</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[Initial version]]></change>
+				</changelog>
+			</entry>
+			<entry>
+				<date>2008-08-07</date>
+				<rev-version>1.0.1</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[Added 2 modules to ACP. Menu settings and adjusting all the buttons.]]></change>
+					<change><![CDATA[Rewrited html/css codes]]></change>
+					<change><![CDATA[Fixed bugs in IE]]></change>
+				</changelog>
+			</entry>
+			<entry>
+				<date>2008-09-20</date>
+				<rev-version>1.0.2</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[Rewrited html and css files.]]></change>
+					<change><![CDATA[Fixed some bugs]]></change>
+					<change><![CDATA[Added new setting to acp]]></change>
+				</changelog>
+			</entry>
+			<entry>
+				<date>2009-03-18</date>
+				<rev-version>1.1.0</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[The whole MOD was rewritten]]></change>
+					<change><![CDATA[Menu for Subsilver2]]></change>
+				</changelog>
+			</entry>
+			<entry>
+				<date>2011-06-04</date>
+				<rev-version>2.0.0</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[The whole MOD was rewritten again]]></change>
+				</changelog>
+			</entry>
+			<entry>
+				<date>2011-06-27</date>
+				<rev-version>2.1.0</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[added dropdown menu]]></change>
+					<change><![CDATA[fixed problem with special characters]]></change>
+					<change><![CDATA[possibility to connect color with style]]></change>
+					<change><![CDATA[buttons only for guests]]></change>
+					<change><![CDATA[possibility to order the buttons via ACP]]></change>
+				</changelog>
+			</entry>
+			<entry>
+				<date>2011-06-29</date>
+				<rev-version>2.1.1</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[return to parent button after reordering, editing and deleting the submenu]]></change>
+					<change><![CDATA[fixed language mistake "parrent"]]></change>
+					<change><![CDATA[added explanation that If you want to manage subbutton please click on its parent button]]></change>
+				</changelog>
+			</entry>
+			<entry>
+				<date>2011-10-15</date>
+				<rev-version>2.2.0</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[added instructions for subsilver based styles]]></change>
+				</changelog>
+			</entry>
+			<entry>
+				<date>2012-02-04</date>
+				<rev-version>2.3.0</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[fixed install instructions]]></change>
+					<change><![CDATA[possibility to use template and language variables for buttons]]></change>
+				</changelog>
+			</entry>
+		</history>
+		<link-group>
+			<link type="template" href="./contrib/subsilver2.xml" lang="en">subsilver2</link>
+		</link-group>
+	</header>
+	<action-group>
+		<copy>
+			<file from="root/adm/style/acp_buttons_menu.html" to="adm/style/acp_buttons_menu.html"/>
+			<file from="root/includes/acp/acp_buttons_menu.php" to="includes/acp/acp_buttons_menu.php"/>
+			<file from="root/includes/acp/info/acp_buttons_menu.php" to="includes/acp/info/acp_buttons_menu.php"/>
+			<file from="root/install_buttons_menu.php" to="install_buttons_menu.php"/>
+			<file from="root/language/en/mods/info_acp_menu.php" to="language/en/mods/info_acp_menu.php"/>
+			<file from="root/styles/prosilver/theme/menu.css" to="styles/prosilver/theme/menu.css"/>
+			<file from="root/styles/prosilver/theme/images/menu/*.*" to="styles/prosilver/theme/images/menu/*.*"/>
+			<file from="root/styles/subsilver2/theme/images/menu/*.*" to="root/styles/subsilver2/theme/images/menu/*.*"/>
+		</copy>
+		<open src="includes/constants.php">
+			<edit>
+				<find><![CDATA[// Additional tables]]></find>
+				<action type="after-add"><![CDATA[define('MENU_BUTTONS_TABLE', $table_prefix . 'menu_buttons');
+define('MENU_COLORS_TABLE', $table_prefix . 'menu_colors');]]></action>
+			</edit>
+		</open>
+		<open src="includes/functions.php">
+			<edit>
+				<find><![CDATA[		'A_COOKIE_SETTINGS'		=> addslashes('; path=' . $config['cookie_path'] . ((!$config['cookie_domain'] || $config['cookie_domain'] == 'localhost' || $config['cookie_domain'] == '127.0.0.1') ? '' : '; domain=' . $config['cookie_domain']) . ((!$config['cookie_secure']) ? '' : '; secure')),
+	));]]></find>
+				<action type="after-add"><![CDATA[
+  // Buttons menu MOD
+  if ( isset($config['menu_enabled']) && $config['menu_enabled'] )
+  {
+    $sql = 'SELECT *
+              FROM ' . MENU_COLORS_TABLE . '
+                WHERE color_style_id = ' . $user->theme['style_id'];
+    $result = $db->sql_query($sql);
+    $row = $db->sql_fetchrow($result);
+
+    if ($db->sql_affectedrows())
+    {
+      $template->assign_vars(array(
+        'S_MENU_COLOR'              => $row['color_name'],
+        'S_MENU_FONT_COLOR'         => $row['color_text'],
+        'S_MENU_FONT_COLOR_HOVER'   => $row['color_text_hover'],
+        'S_MENU_DECORATION'         => $row['color_text_hover_decor'],
+        'S_MENU_WEIGHT'             => $row['color_text_weight'],
+        'S_MENU_SEARCH'             => $row['color_display_search'],
+        'S_MENU_TEXT_TRANSFORM'     => $row['color_text_transform'],
+        'S_MENU_ALIGN'              => $row['color_align'],
+      ));
+
+      $sql = 'SELECT *
+              FROM ' . MENU_BUTTONS_TABLE . '
+                WHERE button_display = 1
+                  AND parent_id = 0
+                ORDER BY left_id';
+      $result = $db->sql_query($sql);
+
+      while ($row = $db->sql_fetchrow($result))
+      {
+        if ( ($row['button_only_registered'] && $user->data['user_id'] == ANONYMOUS) || ($row['button_only_guest'] && $user->data['user_id'] != ANONYMOUS) )
+        {
+          continue;
+        }
+
+				if (preg_match("/\{(.*)\}/", $row['button_url']))
+				{
+					$brackets = array("{", "}");
+					$var_name = strtoupper(str_replace($brackets, '', $row['button_url']));
+					$row['button_url'] = $template->_rootref[$var_name];
+				}
+
+				if (preg_match("/\{(.*)\}/", $row['button_name']))
+				{
+					$brackets = array("{L_", "}");
+					$var_name = strtoupper(str_replace($brackets, '', $row['button_name']));
+					$row['button_name'] = $user->lang[$var_name];
+				}
+
+        $template->assign_block_vars('buttons', array(
+          'ID'                => $row['button_id'],
+          'URL'               => $row['button_url'],
+          'NAME'              => $row['button_name'],
+          'EXTERNAL'          => $row['button_external'],
+        ));
+
+        $sub_sql = 'SELECT *
+                    FROM ' . MENU_BUTTONS_TABLE . '
+                      WHERE button_display = 1
+                        AND parent_id = ' . $row['button_id'] . '
+                      ORDER BY left_id';
+        $sub_result = $db->sql_query($sub_sql);
+
+        while ($sub_row = $db->sql_fetchrow($sub_result))
+        {
+          if ( ($sub_row['button_only_registered'] && $user->data['user_id'] == ANONYMOUS) || ($sub_row['button_only_guest'] && $user->data['user_id'] != ANONYMOUS) )
+          {
+            continue;
+          }
+
+			 		if (preg_match("/\{(.*)\}/", $sub_row['button_url']))
+					{
+						$brackets = array("{", "}");
+						$var_name = strtoupper(str_replace($brackets, '', $sub_row['button_url']));
+						$sub_row['button_url'] = $template->_rootref[$var_name];
+					}
+
+					if (preg_match("/\{(.*)\}/", $sub_row['button_name']))
+					{
+						$brackets = array("{L_", "}");
+						$var_name = strtoupper(str_replace($brackets, '', $sub_row['button_name']));
+						$sub_row['button_name'] = $user->lang[$var_name];
+					}
+
+          $template->assign_block_vars('buttons.sub', array(
+            'ID'                => $sub_row['button_id'],
+            'URL'               => $sub_row['button_url'],
+            'NAME'              => $sub_row['button_name'],
+            'EXTERNAL'          => $sub_row['button_external'],
+          ));
+        }
+        $db->sql_freeresult($sub_result);
+      }
+      $db->sql_freeresult($result);
+    }
+  }]]></action>
+			</edit>
+		</open>
+		<open src="styles/prosilver/template/overall_header.html">
+			<edit>
+				<find><![CDATA[</head>]]></find>
+				<action type="before-add"><![CDATA[<style type="text/css">
+  #menu ul li a {
+  	color: #{S_MENU_FONT_COLOR};
+  }
+  #menu ul li a:hover {    
+    background: url('{T_THEME_PATH}/images/menu/{S_MENU_COLOR}/menu_bg_hover.gif') repeat-x;
+    color: #{S_MENU_FONT_COLOR_HOVER};
+    text-decoration: {S_MENU_DECORATION};  	
+  }
+  #menu ul ul li {
+    background: url('{T_THEME_PATH}/images/menu/{S_MENU_COLOR}/menu_subbg.gif') repeat-x;
+  }
+  #menu ul ul li a:hover {    
+    background: url('{T_THEME_PATH}/images/menu/{S_MENU_COLOR}/menu_subbg_hover.gif') repeat-x;
+  }
+</style>]]></action>
+			</edit>
+			<edit>
+				<find><![CDATA[<!-- IF S_DISPLAY_SEARCH and not S_IN_SEARCH -->]]></find>
+				<action type="replace-with"><![CDATA[<!-- IF ( S_DISPLAY_SEARCH and not S_IN_SEARCH ) and not ( .buttons and S_MENU_SEARCH ) -->]]></action>
+			</edit>
+			<edit>
+				<find><![CDATA[				</fieldset>
+				</form>
+			</div>
+		<!-- ENDIF -->]]></find>
+				<action type="after-add"><![CDATA[    <!-- IF .buttons -->
+      <span class="corners-bottom" style="height:0px;"><span style="display: none;"></span></span></div>
+    </div>
+    <div id="menu" style="clear:both;margin-top:-3px;background: url('{T_THEME_PATH}/images/menu/{S_MENU_COLOR}/menu_bg.gif') repeat-x;">
+    	<div class="inner">
+    	<span class="menu_corner-left" style="background: url('{T_THEME_PATH}/images/menu/{S_MENU_COLOR}/menu_corner.gif') no-repeat;"></span>
+    	<span class="menu_corner-right" style="background: url('{T_THEME_PATH}/images/menu/{S_MENU_COLOR}/menu_corner_right.gif') no-repeat;"></span>
+    <!-- IF S_DISPLAY_SEARCH and S_MENU_SEARCH -->
+    	<div id="top-search" style="<!-- IF S_MENU_ALIGN == 'right' -->float: left;<!-- ELSE -->float: right;<!-- ENDIF -->background: transparent url('{T_THEME_PATH}/images/menu/{S_MENU_COLOR}/menu_search.gif') no-repeat scroll 0 0;">
+    		<form action="{U_SEARCH}" method="post" id="search">
+    		<fieldset>
+    			<input name="keywords" id="keywords" type="text" maxlength="128" title="{L_SEARCH_KEYWORDS}" class="menu_search" value="<!-- IF SEARCH_WORDS-->{SEARCH_WORDS}<!-- ELSE -->{L_SEARCH_MINI}<!-- ENDIF -->" onclick="if(this.value=='{LA_SEARCH_MINI}')this.value='';" onblur="if(this.value=='')this.value='{LA_SEARCH_MINI}';" /> 
+    			{S_SEARCH_HIDDEN_FIELDS}
+    		</fieldset>
+    		</form>
+    	</div>
+    <!-- ENDIF -->
+    	<ul>
+    	<!-- BEGIN buttons -->
+    		<li style="float:{S_MENU_ALIGN};"<!-- IF .buttons.sub --> onmouseover="getElementsByTagName('ul')[0].style.display = 'block';" onmouseout="getElementsByTagName('ul')[0].style.display = 'none';"<!-- ENDIF -->>
+          <a href="{buttons.URL}" title="{buttons.NAME}"<!-- IF buttons.EXTERNAL --> target="_blank"<!-- ENDIF --> style="font-weight:{S_MENU_WEIGHT};text-transform:{S_MENU_TEXT_TRANSFORM};">{buttons.NAME}</a>
+          <!-- IF .buttons.sub -->
+            <ul>
+              <!-- BEGIN sub --><li><a href="{sub.URL}" title="{sub.NAME}"<!-- IF sub.EXTERNAL --> target="_blank"<!-- ENDIF --> style="font-weight:{S_MENU_WEIGHT};text-transform:{S_MENU_TEXT_TRANSFORM};">{sub.NAME}</a></li><!-- END sub -->
+          	</ul>
+        	<!-- ENDIF -->
+        </li>
+      <!-- END buttons -->
+    	</ul>
+    <!-- ENDIF -->]]></action>
+			</edit>
+			<edit>
+				<find><![CDATA[				<li class="icon-faq"><a href="{U_FAQ}" title="{L_FAQ_EXPLAIN}">{L_FAQ}</a></li>]]></find>
+				<action type="after-add"><![CDATA[				<!-- IF .buttons and S_MENU_SEARCH --><li class="icon-search"><a href="{U_SEARCH}" title="{L_SEARCH_ADV_EXPLAIN}">{L_SEARCH}</a></li><!-- ENDIF -->]]></action>
+			</edit>
+		</open>
+		<open src="styles/prosilver/theme/stylesheet.css">
+			<edit>
+				<find><![CDATA[@import url("colours.css");]]></find>
+				<action type="after-add"><![CDATA[@import url("menu.css");]]></action>
+			</edit>
+		</open>
+		<php-installer><![CDATA[install_buttons_menu.php]]></php-installer>
+		<diy-instructions lang="en"><![CDATA[When the edits above are done browse to http://www.yoursite.com/install_buttons_menu.php . After running the installation remove install_buttons_menu.php file from your FTP. Then refresh the template, skin and imageset and purge the cache.
+
+Install script has created 5 different colors of menu. Blue color was assigned to your default style. If you have more then one active style or you dont want to use Blue color, you need to go to ACP - MODs - Buttons menu MOD and assign colors to all your styles.]]></diy-instructions>
+	</action-group>
+</mod>
